@@ -1,0 +1,4 @@
+http://127.0.0.1:82/ana-depo.aspx - tip kýsmý personele atanýnca da ayný yazýyor.
+http://127.0.0.1:82/ana-depo-islemler.aspx - Ýþlem adeti (projeye ürün zimmetleyince filan oluyor)
+http://127.0.0.1:82/ana-depo-islemler-firma.aspx - merkez depodan çýkýþlar nerede?
+http://127.0.0.1:82/ana-depo-urun-imha.aspx - merkeze iade kýsmýnda problem var gibi.

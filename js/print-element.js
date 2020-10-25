@@ -1,0 +1,22 @@
+/*
+* Print Element Plugin 1.1a
+*
+* Copyright (c) 2010 Erik Zaadi
+*
+* Inspired by PrintArea (http://plugins.jquery.com/project/PrintArea) and
+* http://stackoverflow.com/questions/472951/how-do-i-print-an-iframe-from-javascript-in-safari-chrome
+*
+*  Issues (bug reporting) : http://github.com/erikzaadi/jQueryPlugins/issues/labels/printElement
+*  Home Page : http://projects.erikzaadi/jQueryPlugins/jQuery.printElement 
+*  jQuery plugin page : http://plugins.jquery.com/project/printElement 
+*  
+*  Thanks to David B (http://github.com/ungenio) and icgJohn (http://www.blogger.com/profile/11881116857076484100)
+*  For their great contributions!
+* 
+* Dual licensed under the MIT and GPL licenses:
+*   http://www.opensource.org/licenses/mit-license.php
+*   http://www.gnu.org/licenses/gpl.html
+*   
+*   Note, Iframe Printing is not supported in Opera and Chrome 3.0, a popup window will be shown instead
+*/
+;(function(h,i){var j=h["document"];var $=h["jQuery"];$.fn["printElement"]=function(b){var c=$.extend({},$.fn["printElement"]["defaults"],b);if(c["printMode"]=='iframe'){if($.browser.opera||(/chrome/.test(navigator.userAgent.toLowerCase())))c["printMode"]='popup'}$("[id^='printElement_']").remove();return this.each(function(){var a=$.meta?$.extend({},c,$(this).data()):c;_printElement($(this),a)})};$.fn["printElement"]["defaults"]={"printMode":'iframe',"pageTitle":'',"overrideElementCSS":null,"printBodyOptions":{"styleToAdd":'',"classNameToAdd":''},"leaveOpen":false,"iframeElementOptions":{"styleToAdd":'border:none;position:absolute;width:0px;height:0px;bottom:0px;left:0px;',"classNameToAdd":''}};$.fn["printElement"]["cssElement"]={"href":'',"media":''};function _printElement(a,b){var c=_getMarkup(a,b);var d=null;var e=null;if(b["printMode"].toLowerCase()=='popup'){d=h.open('about:blank','printElementWindow','width=650,height=440,scrollbars=yes');e=d.document}else{var f="printElement_"+(Math.round(Math.random()*99999)).toString();var g=j.createElement('IFRAME');$(g).attr({style:b["iframeElementOptions"]["styleToAdd"],id:f,className:b["iframeElementOptions"]["classNameToAdd"],frameBorder:0,scrolling:'no',src:'about:blank'});j.body.appendChild(g);e=(g.contentWindow||g.contentDocument);if(e.document)e=e.document;g=j.frames?j.frames[f]:j.getElementById(f);d=g.contentWindow||g}focus();e.open();e.write(c);e.close();_callPrint(d)};function _callPrint(a){if(a&&a["printPage"])a["printPage"]();else setTimeout(function(){_callPrint(a)},50)}function _getElementHTMLIncludingFormElements(b){var c=$(b);$(":checked",c).each(function(){this.setAttribute('checked','checked')});$("input[type='text']",c).each(function(){this.setAttribute('value',$(this).val())});$("select",c).each(function(){var a=$(this);$("option",a).each(function(){if(a.val()==$(this).val())this.setAttribute('selected','selected')})});$("textarea",c).each(function(){var a=$(this).attr('value');if($.browser.mozilla&&this.firstChild)this.firstChild.textContent=a;else this.innerHTML=a});var d=$('\n<div>\n</div>\n').append(c.clone()).html();return d}function _getBaseHref(){var a=(h.location.port)?':'+ +h.location.port:'';return h.location.protocol+'//'+h.location.hostname+a+h.location.pathname}function _getMarkup(a,b){var c=$(a);var d=_getElementHTMLIncludingFormElements(a);var e=new Array();e.push('<html>\n<head>\n<title>'+b["pageTitle"]+'</title>\n');if(b["overrideElementCSS"]){if(b["overrideElementCSS"].length>0){for(var x=0;x<b["overrideElementCSS"].length;x++){var f=b["overrideElementCSS"][x];if(typeof(f)=='string')e.push('<link type="text/css" rel="stylesheet" href="'+f+'" >\n');else e.push('<link type="text/css" rel="stylesheet" href="'+f["href"]+'" media="'+f["media"]+'" >\n')}}}else{$("link",j).filter(function(){return $(this).attr("rel").toLowerCase()=="stylesheet"}).each(function(){e.push('<link type="text/css" rel="stylesheet" href="'+$(this).attr("href")+'" media="'+$(this).attr('media')+'" >\n')})}e.push('<base href="'+_getBaseHref()+'" />\n');e.push('</head>\n<body style="'+b["printBodyOptions"]["styleToAdd"]+'" class="'+b["printBodyOptions"]["classNameToAdd"]+'">\n');e.push('<link type="text/css" rel="stylesheet" href="css/sitil.css">\n\n<div id="yazdir">\n'+d+'</div>\n');e.push('\n<script type="text/javascript">\nfunction printPage()\n{\nfocus();\nprint();\n'+((!$.browser.opera&&!b["leaveOpen"]&&b["printMode"].toLowerCase()=='popup')?'close();':'')+'}\n</script>\n');e.push('\n</body>\n</html>');return e.join('')}})(window);

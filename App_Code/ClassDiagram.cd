@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Class">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Class.Degiskenler">
+        <TypeIdentifier>
+          <NewMemberFileName>App_Code\Class.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Class.Fonksiyonlar">
+        <Compartments>
+          <Compartment Name="Nested Types" Collapsed="false" />
+        </Compartments>
+        <NestedTypes>
+          <Class Name="Class.Fonksiyonlar.JavaScript">
+            <NestedTypes>
+              <Class Name="Class.Fonksiyonlar.JavaScript.FaceBox" Collapsed="true">
+                <TypeIdentifier>
+                  <NewMemberFileName>App_Code\Class.cs</NewMemberFileName>
+                </TypeIdentifier>
+              </Class>
+            </NestedTypes>
+            <TypeIdentifier>
+              <NewMemberFileName>App_Code\Class.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+          <Class Name="Class.Fonksiyonlar.SiteFonksiyonlari">
+            <TypeIdentifier>
+              <NewMemberFileName>App_Code\Class.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+          <Class Name="Class.Fonksiyonlar.MySQL">
+            <TypeIdentifier>
+              <NewMemberFileName>App_Code\Class.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>App_Code\Class.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Class.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Calibri" Size="9.75" />
+</ClassDiagram>

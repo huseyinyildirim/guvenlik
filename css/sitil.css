@@ -1,0 +1,170 @@
+/*HTML*/
+*{vertical-align:baseline;font-family:inherit;font-size:100%;border:0 none;outline:0;padding:0;margin:0} /*font-style:inherit;font-weight:inherit;*/
+html,body{position:relative;background:#e0f0fc;height:100%;font-family:Tahoma,Helvetica,sans-serif;font-size:11px;color:#513e50}
+/*fieldset{border:1px dotted #c4e2fc}*/
+a{outline:none;text-decoration:underline;color:#000}
+a:hover{text-decoration:none;color:#513e50}
+a:visited{text-decoration:none;text-decoration:line-through}
+.ikon{width:16px;height:16px;vertical-align:middle}
+.ikon2{width:16px;height:16px;vertical-align:text-bottom}
+* html .ikon{behavior:url(htc/pngfix.htc)}
+* html .ikon2{behavior:url(htc/pngfix.htc)}
+.alignmid{vertical-align:middle}
+.span{font-size:10px;font-style:oblique;color:#786a78}
+.pointer{cursor:pointer}
+.margin5{margin-top:5px}
+#jsyok{background:#f7f0d4;border:5px solid #E3DCC2;padding:5px;color:#A09B89;position:fixed;margin:14px 0 0 14px}
+/*HTML*/
+/*TOP*/
+#en_ust #en_ust_ust{height:5px;background:#000}
+#en_ust #en_ust_alt{float:left}
+#en_ust #en_ust_alt #yukari{margin:-7px auto;position:absolute;left:50%;padding:5px;display:block}
+#en_ust #en_ust_alt #yukari a{width:54px;height:13px}
+#en_ust #en_ust_alt #terket{position:absolute;right:30px}
+#en_ust #en_ust_alt #terket a{text-align:center;line-height:29px;float:right;width:142px;height:40px;background:url(../images/terket.png) no-repeat;color:#fff;text-decoration:none;display:block}
+#en_ust #en_ust_alt #terket a:hover{background:url(../images/terket-hover.png) no-repeat}
+#en_ust #en_ust_alt #terket a img{margin-top:2px;margin-right:4px}
+* html #en_ust #en_ust_alt #terket a{behavior:url(htc/pngfix.htc);cursor:pointer}
+#en_ust #ust{background:url(../images/ust-gradient.gif) repeat-x;height:90px;border-bottom:2px solid #6bb6f5}
+#en_ust #ust #logo{float:left;width:320px;height:90px}
+#en_ust #ust #panel_logo{float:right;width:250px;height:90px;background:url(../images/yonetici-paneli.gif) no-repeat}
+/*TOP*/
+/*MAIN*/
+#orta{background:url(../images/arkaplan.gif) repeat-x top}
+* html #orta{float:left;height:100%}
+/*CONTENT*/
+#orta #orta_ic{overflow:hidden;margin:0 auto}
+#orta #orta_ic #giris{padding:20px;width:450px;margin:70px auto;background:#fdfdfd;border:5px solid #6bb6f5;box-shadow:1px 1px 10px #513e50;-moz-box-shadow:1px 1px 10px #513e50;-webkit-box-shadow:1px 1px 10px #513e50}
+* html #orta #orta_ic #giris #rsm{width:128px;height:128px;behavior:url(htc/pngfix.htc)}
+#orta #orta_ic #giris table,#orta #orta_ic #sag_dis #sag #ic table,#basilacak table{border-collapse:collapse;width:100%}
+#orta #orta_ic #giris table td{padding:5px}
+#orta #orta_ic #giris table td .input{background:#fff;text-align:left;border:1px solid #d9e9fb;vertical-align:middle;padding:10px;width:94%}
+*+html #orta #orta_ic #giris table td .input{width:93%}
+#orta #orta_ic #giris table td .input:hover{background:#eeeeee}
+#orta #orta_ic #giris table td .input2,#orta #orta_ic #sag_dis #sag #ic .input2{background:#f7f0d4;text-align:center;border:1px solid #E3DCC2;vertical-align:middle;padding:10px;cursor:pointer;font-weight:bold;color:#A09B89}
+#orta #orta_ic #giris table td .input2:hover,#orta #orta_ic #sag_dis #sag #ic .input2:hover{background:#eeeeee;border:1px solid #d9e9fb}
+/*RIGHT*/
+#orta #orta_ic #sag_dis{padding:30px;margin-left:208px}
+/*RIGHT HEADER*/
+#orta #orta_ic #sag_dis #baslik_dis{float:left;position:absolute;z-index:1}
+* html #orta #orta_ic #sag_dis #baslik_dis{margin-left:3px;width:250px}
+#orta #orta_ic #sag_dis #baslik_dis #baslik{height:40px;background:#fff url(../images/shade2.gif) top repeat-x;border-left:1px solid #c4e2fc;border-right:1px solid #c4e2fc;border-top:1px solid #c4e2fc;line-height:39px;position:relative}
+#orta #orta_ic #sag_dis #baslik_dis #baslik #bslk_sol{float:left;display:block;cursor:pointer;padding:0 10px 0 10px;border-right:1px dashed #c4e2fc}
+* html #orta #orta_ic #sag_dis #baslik_dis #baslik #bslk_sol{margin-top:13px}
+#orta #orta_ic #sag_dis #baslik_dis #baslik #bslk_sol:hover{display:block}
+#orta #orta_ic #sag_dis #baslik_dis #baslik #bslk_sol a{text-decoration:none;font-size:12px}
+#orta #orta_ic #sag_dis #baslik_dis #baslik #bslk_sag{float:left;padding:0 15px 0 10px}
+#orta #orta_ic #sag_dis #baslik_dis #baslik #bslk_sag h1{font-size:13px;color:#f78482;text-align:center}
+#orta #orta_ic #sag_dis #baslik_dis #baslik #bslk_sag h1 span{vertical-align:middle}
+/*RIGHT HEADER*/
+/*RIGHT CONTENT*/
+#orta #orta_ic #sag_dis #sag{margin-top:40px;border:1px solid #c4e2fc;padding:10px;background:#fff url(../images/shade.gif) bottom repeat-x;box-shadow:3px 3px 10px #513e50;-moz-box-shadow:3px 3px 10px #513e50;-webkit-box-shadow:3px 3px 10px #513e50}
+#orta #orta_ic #sag_dis #sag #ic{background:#E0F0FC;padding:5px;border:1px solid #c4e2fc}
+#orta #orta_ic #sag_dis #sag #ic table td{background:url(../images/td-arka.gif) repeat-x top #ebecee;padding:5px;vertical-align:middle;color:#786A78;border:1px solid #c4e2fc}
+#orta #orta_ic #sag_dis #sag #ic table tr.normal:hover,#orta #orta_ic #sag_dis #sag #ic table tr.alternate:hover{opacity:0.4;-moz-opacity:0.4;-khtml-opacity:0.4;filter:alpha(opacity=40)}
+#orta #orta_ic #sag_dis #sag #ic .tdb{border:1px solid #c4e2fc;padding:5px;font-weight:bold;color:#3b9cf8;background:url(../images/td-arka2.gif) repeat-x top #D9E9FB}
+#orta #orta_ic #sag_dis #sag #ic .tdb a{color:#3b9cf8}
+#orta #orta_ic #sag_dis #sag #ic .tdb a:hover{color:#513e50}
+#orta #orta_ic #sag_dis #sag #ic .tdb2{padding:5px;border:1px solid #c4e2fc;background:#FEF9F7 url(../images/pe2.gif) bottom repeat-x}
+#orta #orta_ic #sag_dis #sag #ic .tdb3{padding:5px;border:1px solid #c4e2fc;background:url(../images/pe.gif) repeat-x top #F7F0D5;vertical-align:middle;text-align:left;font-weight:normal}
+#orta #orta_ic #sag_dis #sag #ic .tdb3 span{vertical-align:middle}
+#orta #orta_ic #sag_dis #sag #ic .beyaz{background:#fff;padding:5px}
+#orta #orta_ic #sag_dis #sag #ic .beyaz h3{font-size:11px;vertical-align:middle;color:#786a78}
+#orta #orta_ic #sag_dis #sag #ic #sari{background:#f7f0d4;border:1px solid #E3DCC2;vertical-align:middle;padding:5px;color:#A09B89;margin-bottom:5px}
+#orta #orta_ic #sag_dis #sag #ic #sari span{vertical-align:middle;margin-left:5px}
+#orta #orta_ic #sag_dis #sag #ic .sari2{background:#f7f0d4;border:1px solid #E3DCC2;vertical-align:middle;padding:5px;color:#A09B89;margin-top:5px;visibility:hidden;display:none}
+#orta #orta_ic #sag_dis #sag #ic #syh{background:#000;vertical-align:middle;padding:30px;color:#fff;margin-bottom:5px;text-align:center}
+#orta #orta_ic #sag_dis #sag #ic .input{background:#fff;text-align:left;border:1px solid #d9e9fb;vertical-align:middle;padding:3px;width:99%}
+#orta #orta_ic #sag_dis #sag #ic .input:hover,#orta #orta_ic #sag_dis #sag #ic .input3:hover{background:#eeeeee}
+#orta #orta_ic #sag_dis #sag #ic .input3{background:#fff;text-align:left;border:1px solid #d9e9fb;vertical-align:middle;padding:3px}
+#orta #orta_ic #sag_dis #sag #ic .input4{margin-left:5px;padding:2px;border:1px solid #c4e2fc;background:url(../images/pe.gif) repeat-x top #F7F0D5;vertical-align:middle;text-align:center;cursor:pointer}
+*+html #orta #orta_ic #sag_dis #sag #ic .input4{padding:2px 1px 1px 1px}
+* html #orta #orta_ic #sag_dis #sag #ic .incursor:pointer;display:block}
+#orta #orta_ic #sag_dis #sag #ic .temiz{margin:0;padding:0;border:none;background:none}
+#orta #orta_ic #sag_dis #sag #ic .temiz td{margin:0;padding:0;border:none;background:none}
+#orta #orta_ic #sag_dis #sag #ic .inputtemiz{height:0px;width:0px;margin:0;padding:0;border:none;background:none;position:absolute;font-size:0}
+/*PAGINATION*/
+#orta #orta_ic #sag_dis #sag #ic #sayfalama1{border:1px solid #DBE6D4;background:#F8FCF4 url(../images/td-arka3.gif) bottom repeat-x;padding:10px 10px 10px 4px;margin-bottom:5px}
+#orta #orta_ic #sag_dis #sag #ic #sayfalama1 a,#orta #orta_ic #sag_dis #sag #ic #sayfalama2 a{border:1px solid #C0C9B9;padding:5px;background:#DBE6D4;color:#C0C9B9;text-decoration:none}
+#orta #orta_ic #sag_dis #sag #ic #sayfalama1 a:hover,#orta #orta_ic #sag_dis #sag #ic #sayfalama2 a:hover,#orta #orta_ic #sag_dis #sag #ic table tr td .gridsayfalama td table tr td a:hover{background:#C0C9B9;color:#513e50}
+#orta #orta_ic #sag_dis #sag #ic #sayfalama2{border:1px solid #DBE6D4;background:#F8FCF4 url(../images/td-arka3.gif) bottom repeat-x;padding:10px 10px 10px 4px;margin-top:5px}
+/*READY PAGINATION*/
+#orta #orta_ic #sag_dis #sag #ic table tr td .gridsayfalama td table tr td{float:left;border:none;padding:1px}
+#orta #orta_ic #sag_dis #sag #ic table tr td .gridsayfalama td table tr td a,#orta #orta_ic #sag_dis #sag #ic table tr td .gridsayfalama td table tr td span{display:block;text-decoration:none;padding:5px;background:#f7f0d4;border:1px solid #E3DCC2}
+/*READY PAGINATION*/
+/*PAGINATION*/
+/*RIGHT CONTENT*/
+/*RIGHT*/
+/*LEFT*/
+#orta #orta_ic #sol{float:left;width:178px;margin:30px 0 0 30px}
+* html #orta #orta_ic #sol{margin-left:14px}
+/*LEFT MENU*/
+#orta #orta_ic #sol #sol_menu .ana_menu{font-weight:bold;background:#3b9cf8;height:40px;line-height:40px;color:#fff;cursor:pointer;margin-bottom:5px}
+#orta #orta_ic #sol #sol_menu .ana_menu img{margin:12px;float:left}
+#orta #orta_ic #sol #sol_menu .ana_menu a{display:block;color:#fff;text-decoration:none}
+#orta #orta_ic #sol #sol_menu .ana_menu:hover{background:#513e50}
+#orta #orta_ic #sol #sol_menu .ic_menu{display:none;margin-bottom:5px;font-size:10px}
+#orta #orta_ic #sol #sol_menu .ic_menu img{margin-top:2px;float:left}
+#orta #orta_ic #sol #sol_menu .ic_menu span{margin-left:5px}
+#orta #orta_ic #sol #sol_menu .ic_menu a{display:block;height:20px;line-height:20px;color:#fff;margin-bottom:1px;text-decoration:none;padding:5px;background:#3b9cf8}
+#orta #orta_ic #sol #sol_menu .ic_menu a:hover{background:#f78482;color:#513e50}
+/*LEFT MENU*/
+/*LEFT*/
+/*CONTENT*/
+/*FACEBOX*/
+#facebox{position:absolute;top:0;left:0;z-index:100;text-align:left}
+#facebox table{border-collapse:collapse}
+#facebox td{border-bottom:0;padding:0}
+#facebox img{border:0;margin:0}
+#facebox .b{background:url(../images/b.png)}
+#facebox .tl{background:url(../images/tl.png)}
+#facebox .tr{background:url(../images/tr.png)}
+#facebox .bl{background:url(../images/bl.png)}
+#facebox .br{background:url(../images/br.png)}
+#facebox .popup{position:relative}
+#facebox .body{padding:10px;background:#fdfdfd;width:400px}
+#facebox .loading{text-align:center}
+#facebox .image{text-align:center}
+#facebox .footer{border-top:1px solid #eeeeee;padding-top:5px;margin-top:10px;text-align:right}
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br{height:10px;width:10px;overflow:hidden;padding:0}
+#facebox_overlay{position:fixed;top:0px;left:0px;height:100%;width:100%}
+.facebox_hide{z-index:-100}
+.facebox_overlayBG{background-color:#000;z-index:99}
+* html #facebox_overlay{position:absolute;height:expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px')}
+.close_image{padding-top:10px}
+/*FACEBOX*/
+/*AUTOCOMPLETE*/
+.ac_results {padding:0px;background:#fff;text-align:left;border:1px solid #d9e9fb;overflow:hidden;z-index:99999}
+.ac_results ul{width:100%;list-style-position:outside;list-style:none;padding:0;margin:0}
+.ac_results li{margin:0px;padding:2px 5px;cursor:default;display:block;line-height:16px;overflow:hidden}
+.ac_loading {background:white url('../images/loading.gif') right center no-repeat}
+.ac_odd{background-color:#eee}
+.ac_over{background-color:#513e50;color:white}
+/*AUTOCOMPLETE*/
+/*PRINT*/
+#yazdir #basilacak{background:#fdfdfd;padding:5px;border:5px solid #c4e2fc;margin:10px}
+#yazdir #basilacak #tbl5{margin-top:0}
+#yazdir #basilacak table td,#yazdir #basilacak table td table tr th.tdb,#yazdir #basilacak table td table tr th.tdb2{padding:5px;vertical-align:middle;border:1px solid #c4e2fc}
+#yazdir #basilacak table .tdb{font-weight:bold}
+#yazdir #basilacak table td table tbody .gridsayfalama{display:none;visibility:none}
+/*PRINT*/
+/*PAGE LOADING*/
+#opaque{position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:99;display:none;background-color:#000;opacity:0.2;-moz-opacity:0.2;-khtml-opacity:0.2;filter:alpha(opacity=20)}
+* html #opaque {position:absolute}
+/*PAGE LOADING*/
+/*TIPSY*/
+.tipsy{padding:5px;opacity:0.8;filter:alpha(opacity=80);background-repeat:no-repeat;background-image:url(../images/tipsy.gif)}
+.tipsy-inner{padding:5px 8px 4px 8px;background-color:black;color:white;max-width:400px}
+.tipsy-inner{-moz-border-radius:3px;-webkit-border-radius:3px}
+.tipsy-north{background-position:top center}
+.tipsy-south{background-position:bottom center}
+.tipsy-east{background-position:right center}
+.tipsy-west{background-position:left center}
+/*TIPSY*/
+/*MAIN*/
+/*BOTTOM*/
+#alt_ic{width:100%}
+#alt_ic #alt{border-top:1px solid #6bb6f5;background:#fff url(../images/shade2.gif) top repeat-x;padding:10px;border-bottom:7px solid #6bb6f5}
+#alt_ic #alt #border{border-left:5px solid #f78482;padding-left:10px}
+#alt_ic #alt #yuklenme_zamani{float:right;margin-top:-30px;background:#f78482;color:#fff;padding:5px}
+/*BOTTOM*/
